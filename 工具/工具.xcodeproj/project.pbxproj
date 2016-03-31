@@ -53,6 +53,13 @@
 		49CCA4FE1CA78C9A00C70D63 /* DownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCA4FD1CA78C9A00C70D63 /* DownViewController.m */; };
 		49CCA5011CA78FD500C70D63 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CCA5001CA78FD500C70D63 /* DownLoadViewController.m */; };
 		8EFE4B0E97DD062A8FCD9064 /* libPods-工具.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E335FA1F44A6846ECC87483 /* libPods-工具.a */; };
+		C4485D881CABAEB300AF9437 /* LiandongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4485D871CABAEB300AF9437 /* LiandongViewController.m */; };
+		C4485D8D1CABAF2500AF9437 /* TopScView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4485D8C1CABAF2500AF9437 /* TopScView.m */; };
+		C4485D911CABC51400AF9437 /* XianchenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4485D901CABC51400AF9437 /* XianchenViewController.m */; };
+		C4485D9B1CABF60B00AF9437 /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4485D9A1CABF60B00AF9437 /* PickViewController.m */; };
+		C4485DA61CABFA4A00AF9437 /* ZYQAssetPicker.Bundle in Resources */ = {isa = PBXBuildFile; fileRef = C4485DA31CABFA4A00AF9437 /* ZYQAssetPicker.Bundle */; };
+		C4485DA71CABFA4A00AF9437 /* ZYQAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4485DA51CABFA4A00AF9437 /* ZYQAssetPickerController.m */; };
+		C4485DAC1CAC212B00AF9437 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4485DAB1CAC212B00AF9437 /* AssetsLibrary.framework */; };
 		C4EE45CE1CA7B94F00C53676 /* DoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EE45CD1CA7B94F00C53676 /* DoneViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +164,18 @@
 		49CCA5001CA78FD500C70D63 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
 		9E335FA1F44A6846ECC87483 /* libPods-工具.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-工具.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9076BA4BE17AEFFA469208D /* Pods-工具.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-工具.release.xcconfig"; path = "Pods/Target Support Files/Pods-工具/Pods-工具.release.xcconfig"; sourceTree = "<group>"; };
+		C4485D861CABAEB300AF9437 /* LiandongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LiandongViewController.h; path = ../../../LiandongViewController.h; sourceTree = "<group>"; };
+		C4485D871CABAEB300AF9437 /* LiandongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LiandongViewController.m; path = ../../../LiandongViewController.m; sourceTree = "<group>"; };
+		C4485D8B1CABAF2500AF9437 /* TopScView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopScView.h; sourceTree = "<group>"; };
+		C4485D8C1CABAF2500AF9437 /* TopScView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopScView.m; sourceTree = "<group>"; };
+		C4485D8F1CABC51400AF9437 /* XianchenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XianchenViewController.h; sourceTree = "<group>"; };
+		C4485D901CABC51400AF9437 /* XianchenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XianchenViewController.m; sourceTree = "<group>"; };
+		C4485D991CABF60B00AF9437 /* PickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewController.h; sourceTree = "<group>"; };
+		C4485D9A1CABF60B00AF9437 /* PickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewController.m; sourceTree = "<group>"; };
+		C4485DA31CABFA4A00AF9437 /* ZYQAssetPicker.Bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZYQAssetPicker.Bundle; sourceTree = "<group>"; };
+		C4485DA41CABFA4A00AF9437 /* ZYQAssetPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYQAssetPickerController.h; sourceTree = "<group>"; };
+		C4485DA51CABFA4A00AF9437 /* ZYQAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYQAssetPickerController.m; sourceTree = "<group>"; };
+		C4485DAB1CAC212B00AF9437 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		C4EE45CC1CA7B94F00C53676 /* DoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoneViewController.h; sourceTree = "<group>"; };
 		C4EE45CD1CA7B94F00C53676 /* DoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoneViewController.m; sourceTree = "<group>"; };
 		DF32C90FEAC30658704ECC5E /* Pods-工具.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-工具.debug.xcconfig"; path = "Pods/Target Support Files/Pods-工具/Pods-工具.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4485DAC1CAC212B00AF9437 /* AssetsLibrary.framework in Frameworks */,
 				8EFE4B0E97DD062A8FCD9064 /* libPods-工具.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +211,7 @@
 		218FBDDBCC2AF388D244ED59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C4485DAB1CAC212B00AF9437 /* AssetsLibrary.framework */,
 				9E335FA1F44A6846ECC87483 /* libPods-工具.a */,
 			);
 			name = Frameworks;
@@ -249,7 +270,10 @@
 		436F0B801CA4C77700B88408 /* 工具 */ = {
 			isa = PBXGroup;
 			children = (
+				C4485D921CABF57D00AF9437 /* 图片选择器 */,
 				43087A081CAB5AB00028C2AD /* 定位 */,
+				C4485D891CABAF2500AF9437 /* 联动效果 */,
+				C4485D8E1CABC4E800AF9437 /* 多线程 */,
 				430879FE1CA92D940028C2AD /* 照相机+滤镜 */,
 				43FA29621CA52CEA00DA2093 /* 轮播图 */,
 				43FA295B1CA527A300DA2093 /* 小菊花的二次封装 */,
@@ -489,6 +513,56 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C4485D891CABAF2500AF9437 /* 联动效果 */ = {
+			isa = PBXGroup;
+			children = (
+				C4485D8A1CABAF2500AF9437 /* TopScView */,
+			);
+			name = "联动效果";
+			path = "照相机+滤镜/联动效果";
+			sourceTree = "<group>";
+		};
+		C4485D8A1CABAF2500AF9437 /* TopScView */ = {
+			isa = PBXGroup;
+			children = (
+				C4485D8B1CABAF2500AF9437 /* TopScView.h */,
+				C4485D8C1CABAF2500AF9437 /* TopScView.m */,
+				C4485D861CABAEB300AF9437 /* LiandongViewController.h */,
+				C4485D871CABAEB300AF9437 /* LiandongViewController.m */,
+			);
+			path = TopScView;
+			sourceTree = "<group>";
+		};
+		C4485D8E1CABC4E800AF9437 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				C4485D8F1CABC51400AF9437 /* XianchenViewController.h */,
+				C4485D901CABC51400AF9437 /* XianchenViewController.m */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		C4485D921CABF57D00AF9437 /* 图片选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				C4485D991CABF60B00AF9437 /* PickViewController.h */,
+				C4485D9A1CABF60B00AF9437 /* PickViewController.m */,
+				C4485DA21CABFA4A00AF9437 /* ZYQAssetPickerController */,
+			);
+			name = "图片选择器";
+			path = "定位/图片选择器";
+			sourceTree = "<group>";
+		};
+		C4485DA21CABFA4A00AF9437 /* ZYQAssetPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C4485DA31CABFA4A00AF9437 /* ZYQAssetPicker.Bundle */,
+				C4485DA41CABFA4A00AF9437 /* ZYQAssetPickerController.h */,
+				C4485DA51CABFA4A00AF9437 /* ZYQAssetPickerController.m */,
+			);
+			path = ZYQAssetPickerController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -607,6 +681,7 @@
 				436F0B911CA4C77700B88408 /* LaunchScreen.storyboard in Resources */,
 				43FA297B1CA538D100DA2093 /* 1.jpg in Resources */,
 				43FA297D1CA538D100DA2093 /* 3.jpg in Resources */,
+				C4485DA61CABFA4A00AF9437 /* ZYQAssetPicker.Bundle in Resources */,
 				43FA29811CA538D100DA2093 /* 7.jpg in Resources */,
 				436F0B8E1CA4C77700B88408 /* Assets.xcassets in Resources */,
 				436F0B8C1CA4C77700B88408 /* Main.storyboard in Resources */,
@@ -689,15 +764,19 @@
 				436F0BCD1CA4D08B00B88408 /* PubuCell.m in Sources */,
 				43FA29921CA53BCF00DA2093 /* UICollectionView+UICollectionView_InitCollection.m in Sources */,
 				436F0BC21CA4CA5F00B88408 /* ZIshiyinggaodu.m in Sources */,
+				C4485DA71CABFA4A00AF9437 /* ZYQAssetPickerController.m in Sources */,
 				43087A011CA92FA60028C2AD /* LvJjingVC.m in Sources */,
 				43FA29901CA53BCF00DA2093 /* LunBoTuCollectionViewCell.m in Sources */,
 				43FA29561CA4EEB000DA2093 /* MovieViewController.m in Sources */,
+				C4485D8D1CABAF2500AF9437 /* TopScView.m in Sources */,
 				43087A0B1CAB5B090028C2AD /* DingweiVC.m in Sources */,
+				C4485D9B1CABF60B00AF9437 /* PickViewController.m in Sources */,
 				C4EE45CE1CA7B94F00C53676 /* DoneViewController.m in Sources */,
 				43FA295A1CA5260000DA2093 /* UIViewController+NetJudge.m in Sources */,
 				49CCA4F01CA62A7000C70D63 /* PlayerViewController.m in Sources */,
 				436F0BC71CA4CE8D00B88408 /* PubuViewController.m in Sources */,
 				436F0B891CA4C77700B88408 /* ViewController.m in Sources */,
+				C4485D911CABC51400AF9437 /* XianchenViewController.m in Sources */,
 				49CCA4FB1CA78C1100C70D63 /* DownLoad.m in Sources */,
 				49CCA5011CA78FD500C70D63 /* DownLoadViewController.m in Sources */,
 				436F0B861CA4C77700B88408 /* AppDelegate.m in Sources */,
@@ -712,6 +791,7 @@
 				436F0BC31CA4CA5F00B88408 /* AotuLayout.m in Sources */,
 				436F0BD01CA4D10800B88408 /* PubuModel.m in Sources */,
 				436F0BDB1CA4DEC900B88408 /* GaoViewController.m in Sources */,
+				C4485D881CABAEB300AF9437 /* LiandongViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

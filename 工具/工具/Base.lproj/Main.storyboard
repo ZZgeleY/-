@@ -21,6 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="27" y="325"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="b74-Ug-KaJ">
@@ -72,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCm-Rc-Fpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939.5" y="370.5"/>
+            <point key="canvasLocation" x="629.5" y="358.5"/>
         </scene>
         <!--Down View Controller-->
         <scene sceneID="LQ0-tQ-rBV">
@@ -128,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XNG-IH-lAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1136.5" y="477.5"/>
+            <point key="canvasLocation" x="1080.5" y="365.5"/>
         </scene>
         <!--Down Load View Controller-->
         <scene sceneID="8QS-w1-Gk3">
@@ -167,7 +168,85 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Epa-o4-SQv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1614.5" y="526.5"/>
+            <point key="canvasLocation" x="1534.5" y="365.5"/>
+        </scene>
+        <!--Xianchen View Controller-->
+        <scene sceneID="qHZ-JL-k5X">
+            <objects>
+                <viewController storyboardIdentifier="xiancheng" id="Tcn-Sq-oaI" customClass="XianchenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0zo-dE-pgg"/>
+                        <viewControllerLayoutGuide type="bottom" id="wUc-6U-jAP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NjY-TG-skM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXm-ws-Om5">
+                                <rect key="frame" x="152" y="290" width="71" height="30"/>
+                                <state key="normal" title="GCD1"/>
+                                <connections>
+                                    <action selector="GCD:" destination="Tcn-Sq-oaI" eventType="touchUpInside" id="iQG-Vo-w6B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnq-wN-euf">
+                                <rect key="frame" x="120" y="349" width="135" height="30"/>
+                                <state key="normal" title="并发的执行循环迭代"/>
+                                <connections>
+                                    <action selector="GCD1:" destination="Tcn-Sq-oaI" eventType="touchUpInside" id="m5L-mO-cUH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="132-pS-3dl">
+                                <rect key="frame" x="105" y="480" width="106" height="30"/>
+                                <state key="normal" title="dispatch_group"/>
+                                <connections>
+                                    <action selector="GCD3:" destination="Tcn-Sq-oaI" eventType="touchUpInside" id="Tr8-IL-0QF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7x-R3-Cs6">
+                                <rect key="frame" x="105" y="430" width="135" height="30"/>
+                                <state key="normal" title="在主线程中提供任务"/>
+                                <connections>
+                                    <action selector="GCD2:" destination="Tcn-Sq-oaI" eventType="touchUpInside" id="ZJN-Xd-hYH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BXX-8p-acV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942.5" y="371.5"/>
+        </scene>
+        <!--Pick View Controller-->
+        <scene sceneID="xZR-vK-odP">
+            <objects>
+                <viewController storyboardIdentifier="pick" id="t5c-O6-wHK" customClass="PickViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAD-Tm-y5G"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZcD-eP-tU9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1mG-KQ-czZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKd-JB-8jJ">
+                                <rect key="frame" x="151" y="617" width="72" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.38622265240081177" blue="0.40876981540315105" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="open"/>
+                                <connections>
+                                    <action selector="btn:" destination="t5c-O6-wHK" eventType="touchUpInside" id="dzj-kN-GUC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GiH-x5-aFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2343.5" y="332.5"/>
         </scene>
     </scenes>
 </document>

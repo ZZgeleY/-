@@ -18,9 +18,12 @@
 #import "PlayerViewController.h" // 音频
 #import "LvJingViewController.h" // 照相,滤镜
 #import "DingweiVC.h" // 定位
+#import "LiandongViewController.h"//联动效果
+#import "XianchenViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property(nonatomic,strong)NSMutableArray *dataArr;
 @end
 
 @implementation ViewController
@@ -28,15 +31,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    
+    self.dataArr = [ NSMutableArray array];
+    self.dataArr = [@[@"collection瀑布",@"视频",@"轮播图",@"清除网络缓存数据",@"提示框1", @"提示框2",@"音乐播放器",@"下载",@"滤镜",@"定位",@"联动效果",@"多线程",@"图片选择器"] mutableCopy];
     /**<  网络解析自带本地缓存 */
     /**<  清除缓存方法在下方 */
     //判断网络
     [self networkJudgeWith:self];
-    
+   
     
     [self tableView1];
+    
+    
+    
 }
 
 
@@ -50,56 +56,26 @@
     
     [self.view addSubview:_tableView];
     
+
    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 100;
+    return _dataArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+ 
+   //这样为了搞掉重用池问题
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
     
-    switch (indexPath.row) {
-        case 0:
-            cell.textLabel.text=@"collection瀑布流";
-            break;
-        case 1:
-            cell.textLabel.text=@"视频";
-            break;
-        case 2:
-            cell.textLabel.text=@"轮播图";
-            break;
-        case 3:
-            cell.textLabel.text=@"清除网络缓存数据";
-            break;
-        case 4:
-            cell.textLabel.text = @"提示框1";
-            break;
-        case 5:
-            cell.textLabel.text = @"提示框2";
-            break;
-        case 6:
-            cell.textLabel.text = @"音乐播放器";
-            break;
-        case 7:
-            cell.textLabel.text = @"下载";
-            break;
-        case 8:
-            cell.textLabel.text = @"滤镜";
-            break;
-        case 9:
-            cell.textLabel.text = @"定位";
-            break;
-        default:
-            break;
-    }
+    cell.textLabel.text = _dataArr[indexPath.row];
     return cell;
 }
 
@@ -126,15 +102,17 @@
         LunboVCViewController *lunbo = [[LunboVCViewController alloc]init];
         [self.navigationController pushViewController:lunbo animated:YES];
     }
-    
+    //清缓
     if (indexPath.row == 3) {
         [self qingchuhuancun];
     }
+    //弹窗
     if(indexPath.row == 4){
         [AlertAndActionTool showAlertWith:@"提示" AndContent:@"点击成功" AndViewController:self AndCallBack:^{
             //写实现的方法
         }];
         }
+    //弹窗2
         if (indexPath.row == 5) {
             [AlertAndActionTool showActionSheetWithTitle:@"" Item1:@"张中烨傻" AndItem2:@"张中烨二傻" AndItem3:@"取消" AndViewController:self AndCallBack:^(int index) {
                 if(index == 1)
@@ -148,7 +126,7 @@
             }];
         
         
-    }
+    }//音频播放器
      if(indexPath.row == 6)
      {
          UIStoryboard *sb =[ UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle] ];
@@ -157,6 +135,7 @@
          [self.navigationController pushViewController:vc animated:YES];
 
      }
+    //下载
     if(indexPath.row == 7)
     {
         UIStoryboard *sb =[ UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle] ];
@@ -164,18 +143,36 @@
         UIViewController *vc =[ sb instantiateViewControllerWithIdentifier:@"down"];
         [self.navigationController pushViewController:vc animated:YES];
     }
+//滤镜
     if (indexPath.row == 8) {
         LvJingViewController *vc = [[LvJingViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    //定位
     if (indexPath.row == 9 ) {
         DingweiVC *vc = [[DingweiVC alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
-    
+    //联动效果
+    if(indexPath.row == 10)
+    {
+        LiandongViewController *liandong =[[ LiandongViewController alloc] init];
+        [self.navigationController pushViewController:liandong animated:YES];
+    }
+    if (indexPath.row == 11) {
+        UIStoryboard *sb =[ UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle] ];
+        //通过id获取VC
+        UIViewController *vc =[ sb instantiateViewControllerWithIdentifier:@"xiancheng"];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    if(indexPath.row == 12){
+        UIStoryboard *sb =[ UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle] ];
+        UIViewController *vc =[ sb instantiateViewControllerWithIdentifier:@"pick"];
+        [self.navigationController pushViewController:vc animated:YES];
+        
 }
 
-
+}
 /**<  强制竖屏 */
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {

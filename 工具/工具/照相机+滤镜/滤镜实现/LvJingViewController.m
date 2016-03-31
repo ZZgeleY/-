@@ -7,7 +7,6 @@
 //
 #import "LvJjingVC.h"
 #import <MobileCoreServices/MobileCoreServices.h>
-
 #import "LvJingViewController.h"
 //屏幕宽
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
@@ -82,6 +81,8 @@
     if ([UIImagePickerController isSourceTypeAvailable:
          UIImagePickerControllerSourceTypeSavedPhotosAlbum])
     {
+        
+
         UIImagePickerController *imagePicker =
         [[UIImagePickerController alloc] init];
         imagePicker.delegate = self;
@@ -93,7 +94,8 @@
         imagePicker.allowsEditing = NO;
         [self presentViewController:imagePicker animated:YES completion:^(void){}];
     }
-}
+    
+      }
 
 // 调用照相机的方法
 - (void)camera
